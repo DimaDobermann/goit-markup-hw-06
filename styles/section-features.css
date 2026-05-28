@@ -50,3 +50,28 @@
   justify-content: center;
   margin-bottom: 8px;
 }
+@media (min-width: 768px) {
+  .features-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: start;
+  }
+
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features__item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .features-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
