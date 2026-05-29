@@ -1,5 +1,5 @@
 .features {
-  padding: 96px 0;
+  padding: 96px 16px;
 }
 
 .visually-hidden {
@@ -30,7 +30,7 @@
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-align: center;
+  justify-content: start;
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -41,6 +41,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  justify-content: start;
 }
 
 .icon-box-features {
