@@ -11,12 +11,13 @@
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href='./css/main.css'>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
+
+  <link rel="stylesheet" href='./css/main.css'>
 
 
 </head>
@@ -25,7 +26,7 @@
 
 
   <!--#region header -->
-  <header class="header">
+  <header id="header" class="header">
     <div class="container header-container">
       <nav class="header-navigation">
         <a class="header-logo header-logo-page" href="./index.html">Web<span class="raleway-logo">Studio</span>
@@ -65,97 +66,12 @@
   <!-- #endregion header-->
 
 
-  <!--#region mobile menu -->
-  <div class="mobile-menu ">
-    <div class="mobile-menu-container">
 
-      <button type="button" class="close-btn">
-        <svg class="close-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-
-      <nav class="mobile-menu-nav">
-        <ul class="mobile-menu-list">
-          <li>
-            <a class="mobile-menu-link current" href="./index.html">
-              <span class="accent-word"> Studio </span>
-            </a>
-          </li>
-
-          <li>
-            <a class="mobile-menu-link" href="">
-              Portfolio
-            </a>
-          </li>
-
-          <li>
-            <a class="mobile-menu-link" href="">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <address class="mobile-menu-link">
-        <ul class="mobile-address-list">
-          <li>
-            <a class="mobile-address-link tel" href="tel:+110001111111">
-              +11 (000) 111-11-11
-            </a>
-          </li>
-
-          <li>
-            <a class="mobile-address-link" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-      </address>
-
-      <ul class="mobile-social-list">
-        <li class="mobile-social-item">
-          <a class="mobile-social-link" href="#">
-            <svg class="mobile-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="mobile-social-item">
-          <a class="mobile-social-link" href="#">
-            <svg class="mobile-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="mobile-social-item">
-          <a class="mobile-social-link" href="#">
-            <svg class="mobile-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="mobile-social-item">
-          <a class="mobile-social-link" href="#">
-            <svg class="mobile-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-
-  <!-- #endregion mobile menu -->
 
   <main>
 
     <!-- #region section class="hero-->
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container">
         <h1 class="hero-text">Effective Solutions for Your Business</h1>
         <button class="button" type="button">Order Service</button>
@@ -164,9 +80,9 @@
     <!-- #endregion section class="hero-->
 
     <!-- #region section class="features" -->
-    <section class="features">
+    <section id="features" class="features">
       <div class="container">
-        <h2 class="visually-hidden">Features</h2>
+        <h2 class="sr-only">Features</h2>
         <ul class="features-list">
           <li class="features-item">
             <div class="icon-box-features">
@@ -218,7 +134,7 @@
     <!-- #endregion section class="features" -->
 
     <!-- #region section class="our-team" -->
-    <section class="our-team">
+    <section id="team" class="our-team">
       <div class="container our-team-container">
         <h2 class="team">Our Team</h2>
 
@@ -401,7 +317,7 @@
     <!-- #endregion section class="our-team" -->
 
     <!-- #region section class="project-card" -->
-    <section class="project-card">
+    <section id="portfolio" class="project-card">
       <div class="container">
         <h2 class="portfolio">Our Portfolio</h2>
         <ul class="card-list">
@@ -505,7 +421,7 @@
   </main>
 
   <!-- #region footer class="footer" -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container footer-container">
       <div class="footer-logo-box">
         <a class="footer-logo" href="./index.html">Web<span class="raleway">Studio</span></a>
@@ -555,9 +471,10 @@
 
         <form class="footer-form">
 
-          <label class="footer-form-email" for="form-email" aria-label="footer email">
+          <label class="footer-form-email" for="form-email">
 
-            <input class="form-input-email" id="form-email" type="email" name="email" placeholder="E-mail" />
+            <input class="form-input-email" id="form-email" type="email" name="email" placeholder="E-mail"
+              aria-label="footer email" />
           </label>
           <button type="submit" class="form-button-icon">
             Subscribe
@@ -575,8 +492,95 @@
   </footer>
   <!-- #endregion footer class="footer" -->
 
+  <!--#region mobile menu -->
+  <div id="mobile-menu" class="mobile-menu ">
+    <div class="mobile-menu-container">
+
+      <button type="button" class="close-btn">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li>
+            <a class="mobile-menu-link current" href="./index.html">
+              <span class="accent-word"> Studio </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-link" href="">
+              Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-link" href="">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <address class="mobile-menu-link">
+        <ul class="mobile-address-list">
+          <li>
+            <a class="mobile-address-link tel" href="tel:+110001111111">
+              +11 (000) 111-11-11
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-address-link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-social-list">
+        <li class="mobile-social-item">
+          <a class="mobile-social-link" href="#">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-social-item">
+          <a class="mobile-social-link" href="#">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-social-item">
+          <a class="mobile-social-link" href="#">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-social-item">
+          <a class="mobile-social-link" href="#">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- #endregion mobile menu -->
+
   <!-- #region modal -->
-  <div class="modal-backdrop">
+  <div id="modal" class="modal-backdrop">
     <div class="modal">
       <button type="button" class="close-btn">
         <svg class="close-icon" width="8" height="8">
