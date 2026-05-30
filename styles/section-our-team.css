@@ -1,15 +1,6 @@
 .our-team {
   background-color: #f4f4fd;
-  padding: 120px 0;
-  box-shadow:
-    0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
-}
-.team-content {
+  padding: 96px 0;
 }
 
 .team {
@@ -25,29 +16,55 @@
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  max-width: 264px;
+
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-subtitle-text {
   padding: 32px 0;
 }
 
+.team-subtitle {
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: center;
+}
+
 .socials-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding: 0;
-  margin: 8px 0 0 0;
-  list-style: none;
+  margin-top: 8px;
 }
 
 .socials-icon {
   width: 40px;
   height: 40px;
-}
-
-.socials-svg {
-  fill: #f4f4fd;
 }
 
 .socials-link {
@@ -60,33 +77,45 @@
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .socials-link:hover,
 .socials-link:focus {
   background-color: #404bbf;
 }
 
-.team-item {
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+.socials-svg {
+  fill: #f4f4fd;
 }
 
-.team-subtitle {
-  font-weight: 500;
-  text-align: center;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  background-color: #ffffff;
-  margin-bottom: 8px;
+/* ===== TABLET ===== */
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    max-width: 264px;
+  }
 }
-.team-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-align: center;
-  background-color: #ffffff;
+
+/* ===== DESKTOP ===== */
+
+@media screen and (min-width: 1158px) {
+  .our-team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
