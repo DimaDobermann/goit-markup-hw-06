@@ -6,9 +6,10 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 72px;
   text-align: center;
+  align-items: center;
 }
 
 .footer-logo-box {
@@ -186,7 +187,7 @@
   }
 
   .footer-social-box {
-    margin-right: 80px;
+    margin-right: 83px;
   }
 
   .form-content-input {
