@@ -1,8 +1,8 @@
-@import "./global.css";
+@import "./common.css";
 @import "./header.css";
-@import "./section-hero.css";
-@import "./section-our-team.css";
-@import "./section-project-card.css";
-@import "./section-features.css";
+@import "./hero.css";
+@import "./team.css";
+@import "./portfolio.css";
+@import "./features.css";
 @import "./footer.css";
-@import "./modal.css";
+@import "./mobile-menu.css";
