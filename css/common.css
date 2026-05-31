@@ -55,6 +55,17 @@ img {
   overflow: hidden;
 }
 
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.mobile-menu-close:hover .close-icon,
+.mobile-menu-close:focus .close-icon {
+  fill: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
