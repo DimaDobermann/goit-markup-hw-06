@@ -153,7 +153,6 @@
     justify-content: flex-start;
     text-align: left;
     gap: 72px 24px;
-    padding: 0 108px;
   }
 
   .footer-social-box {
@@ -173,13 +172,11 @@
 /* ===== DESKTOP ===== */
 
 @media screen and (min-width: 1158px) {
-  .footer {
-    padding: 100px 0;
-  }
-
   .footer-container {
     flex-wrap: nowrap;
     gap: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer-logo-box {
@@ -187,7 +184,7 @@
   }
 
   .footer-social-box {
-    margin-right: 83px;
+    margin-right: 80px;
   }
 
   .form-content-input {

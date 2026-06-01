@@ -16,8 +16,7 @@
   letter-spacing: 0.02em;
   color: #fff;
   max-width: 216px;
-  margin: 0 auto;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
   text-align: center;
 }
 
@@ -29,7 +28,6 @@
   color: #fff;
   background: #4d5ae5;
   cursor: pointer;
-  margin-top: 0;
   min-width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
@@ -67,14 +65,6 @@
     max-width: 496px;
     margin: 0 auto 36px;
   }
-
-  .button {
-    margin-top: 36px;
-  }
-
-  .hero .container {
-    padding: 0 15px;
-  }
 }
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
@@ -99,9 +89,9 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-}
-.button {
-  margin-top: 48px;
+  .button {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1158px) and (min-resolution: 192dpi) {

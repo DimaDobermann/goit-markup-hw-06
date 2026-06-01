@@ -27,7 +27,7 @@
   transform: translate(-50%, -50%);
 
   width: calc(100% - 32px);
-  max-width: 408px;
+  max-width: 288px;
   min-height: 584px;
 
   padding: 72px 16px 24px;
@@ -80,13 +80,6 @@
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
-}
-
-.close-icon:hover,
-.close-icon:focus {
-}
-
-.modal-form {
 }
 
 .form-item {
@@ -270,6 +263,7 @@ textarea.form-field {
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    max-width: 408px;
     padding: 72px 24px 24px;
   }
 }
