@@ -115,6 +115,10 @@
   background-color: transparent;
   padding-left: 16px;
   color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .form-input-email::placeholder {
@@ -128,19 +132,14 @@
   border-radius: 4px;
   background-color: #4d5ae5;
   cursor: pointer;
-
+  margin-left: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-}
-
-.button-icon {
-  margin-left: 16px;
 }
 
 /* ===== TABLET ===== */
@@ -153,6 +152,8 @@
     justify-content: flex-start;
     text-align: left;
     gap: 72px 24px;
+    max-width: 584px;
+    margin: 0 auto;
   }
 
   .footer-social-box {
@@ -167,6 +168,9 @@
   .form-input-email {
     width: 264px;
   }
+  .footer-text {
+    max-width: 264px;
+  }
 }
 
 /* ===== DESKTOP ===== */
@@ -174,6 +178,7 @@
 @media screen and (min-width: 1158px) {
   .footer-container {
     flex-wrap: nowrap;
+    align-items: baseline;
     gap: 0;
     padding-left: 0;
     padding-right: 0;
@@ -188,6 +193,10 @@
   }
 
   .form-content-input {
-    margin-left: auto;
+    margin-left: 0;
+  }
+
+  .footer {
+    padding: 100px 0;
   }
 }
