@@ -43,6 +43,8 @@
   background-color: #404bbf;
 }
 
+/* _________TABLET_____________ */
+
 @media (min-resolution: 192dpi) {
   .hero {
     background-image:
@@ -63,9 +65,11 @@
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
-    margin: 0 auto 48px;
+    margin: 0 auto 36px;
   }
 }
+
+/* ________DESKTOP____________ */
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
